@@ -64,7 +64,7 @@ function readStock(data){
 //función para actualizar el almacenamiento de comida y la última vez que fue alimentado.
 
 function AlimentarPerro(){
-  dog.addImage(PerroFeliz);
+  perro.addImage(PerroFeliz);
   //Escribe aquí para actualizar el almacenamiento de comida y el tiempo en que fue alimentado.
   
   // Codifica para mostrar el texto que indique cuando fue alimentado por última vez aquí.
