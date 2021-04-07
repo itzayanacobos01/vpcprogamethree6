@@ -54,16 +54,20 @@ function draw() {
   drawSprites();
 }
 
-//function to read food Stock
+//función para leer el almacenamiento.
 function readStock(data){
   AComida=data.val();
   ComidaObj.updateAlmacenamientoComida(foodS);
 }
 
 
-//function to update food stock and last fed time
+//función para actualizar el almacenamiento de comida y la última vez que fue alimentado.
+
 function AlimentarPerro(){
   dog.addImage(PerroFeliz);
+  //Escribe aquí para actualizar el almacenamiento de comida y el tiempo en que fue alimentado.
+  
+  // Codifica para mostrar el texto que indique cuando fue alimentado por última vez aquí.
   
   var Almacenamiento_Comida_val = ComidaObj.getAlmacenamientoComida();
   if(Almacenamiento_Comida_val <= 0){
@@ -78,7 +82,7 @@ function AlimentarPerro(){
   })
 }
 
-//function to add food in stock
+//función para agregar comida al almacenamiento.
 function AgregarComida(){
   AComida++;
   database.ref('/').update({
